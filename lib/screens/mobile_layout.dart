@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mino/colors.dart';
+import 'package:mino/widgets/contacts_list.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
@@ -10,6 +11,8 @@ class MobileLayout extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: kPrimaryColor,
+          elevation: 0,
           title: const Text(
             "Minochat",
             style: TextStyle(
@@ -48,6 +51,7 @@ class MobileLayout extends StatelessWidget {
             ],
           ),
         ),
+        body: const ContactList(),
       ),
     );
   }
