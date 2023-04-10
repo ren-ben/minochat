@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mino/colors.dart';
+import 'package:mino/screens/web_mobile_bar.dart';
 import 'package:mino/widgets/contacts_list.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -13,7 +14,7 @@ class DesktopLayout extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // Web Profile Bar
+              WebProfileBar(),
               // Web Search Bar
               ContactList(),
             ],
