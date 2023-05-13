@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909909360686",
+    "project_id": "mino-backend",
+    "storage_bucket": "mino-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909909360686:android:3614bdf81e92f6510a5fbf",
+        "android_client_info": {
+          "package_name": "com.example.mino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909909360686-qjnmhctaifpo7amok0fhhtp490cb77tc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaiWaFecbOA5gAuINeJgwuWaEEQplj86k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909909360686-qjnmhctaifpo7amok0fhhtp490cb77tc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
