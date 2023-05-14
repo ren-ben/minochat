@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:mino/colors.dart';
+import 'package:mino/features/landing/screens/landing_screen.dart';
 import 'package:mino/firebase_options.dart';
 import 'package:mino/resp/responsive_layout.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: kPrimaryColor,
       ),
-      home: const ResposiveLayout(),
+      home: const LandingScreen(),
     );
   }
 }
