@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mino/colors.dart';
 import 'package:mino/features/landing/screens/landing_screen.dart';
 import 'package:mino/firebase_options.dart';
-import 'package:mino/resp/responsive_layout.dart';
+import 'package:mino/router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,8 +23,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Minochat',
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: kPrimaryColor,
-      ),
+          scaffoldBackgroundColor: kPrimaryColor,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: webAppBarColor,
+            elevation: 0.0,
+          )),
+      onGenerateRoute: (settings) => generateRoute(settings),
       home: const LandingScreen(),
     );
   }

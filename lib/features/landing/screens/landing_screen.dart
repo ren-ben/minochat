@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mino/colors.dart';
 import 'package:mino/common/widgets/custom_button.dart';
+import 'package:mino/features/auth/screens/login_screen.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});
+
+  void navigateToLoginScreen(BuildContext context) {
+    Navigator.pushNamed(context, LoginScreen.routeName);
+  }
 
   @override
   State<LandingScreen> createState() => _LandingScreenState();
@@ -57,7 +62,9 @@ class _LandingScreenState extends State<LandingScreen> {
             ),
             SizedBox(
               width: size.width * 0.75,
-              child: CustomButton(text: "CONTINUE TO APP", onPressed: () {}),
+              child: CustomButton(
+                  text: "CONTINUE TO APP",
+                  onPressed: () => widget.navigateToLoginScreen(context)),
             ),
           ],
         ),
